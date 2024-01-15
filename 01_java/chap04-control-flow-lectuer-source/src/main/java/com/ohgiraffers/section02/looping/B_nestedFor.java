@@ -98,18 +98,26 @@ public class B_nestedFor {
         System.out.print("정수를 입력하시오: ");
         int input = sc.nextInt();
 
-        for (int i = 1; i <= input;)
+        for (int i = 1; i <= input*2; i += 2){
+            if(i <= input){
+                System.out.print(" ".repeat((input-i) / 2));
+                System.out.print("*".repeat(i));
+            } else{
+                System.out.print(" ".repeat((i-input) / 2));
+                System.out.print("*".repeat(input*2-i)); // 수정 필요
+            }
+            System.out.println();
+        }
+
 
 //        for (int i = 1; i <= input; i += 2) {
 //            System.out.print(" ".repeat((input-i)/2));
 //            System.out.print("*".repeat(i));
-//            System.out.print(" ".repeat((input-i)/2));
 //            System.out.println();
 //        }
 //        for (int i = input-2; i >= 1 ; i -= 2) {
 //            System.out.print(" ".repeat((input-i)/2));
 //            System.out.print("*".repeat(i));
-//            System.out.print(" ".repeat((input-i)/2));
 //            System.out.println();
 //        }
     }

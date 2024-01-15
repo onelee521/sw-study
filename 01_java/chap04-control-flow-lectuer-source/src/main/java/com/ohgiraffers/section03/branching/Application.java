@@ -14,6 +14,7 @@ public class Application {
         B_continue bClass = new B_continue();
 
         /* 필기. continue문 흐름 확인용 메소드 호출 */
-        bClass.testSimpleContinueStatement();
+//        bClass.testSimpleContinueStatement();
+
     }
 }
