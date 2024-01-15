@@ -31,6 +31,7 @@ public class Application4 {
 
         /* 필기. 평균(avg) 구하기 */
         double avg = 0.0;
-        System.out.println("평균: " + sum / (double)score.length);
+        avg =  sum / (double)score.length;
+        System.out.println("평균: " + avg);
     }
 }
