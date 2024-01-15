@@ -27,7 +27,7 @@ public class B_ifElse {
 
     public void testNestedIfElseStatement() {
 
-        /* 수업목표. 줍첩된 if-else문의 흐름을 이해하고 적용할 수 있다. */
+        /* 수업목표. 중첩된 if-else문의 흐름을 이해하고 적용할 수 있다. */
         Scanner sc = new Scanner(System.in);
 
         System.out.print("정수를 하나 입력하세요: ");

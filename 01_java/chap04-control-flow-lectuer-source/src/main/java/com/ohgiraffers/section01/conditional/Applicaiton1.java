@@ -1,7 +1,7 @@
 package com.ohgiraffers.section01.conditional;
 
 
-/* 설명. 이제부터 실행용 클래스틀 구분해서 사옹한다.(main 메소드는 여기에만 포함) */
+/* 설명. 이제부터 실행용 클래스틀 구분해서 사용한다.(main 메소드는 여기에만 포함) */
 public class Applicaiton1 {
 
     public static void main(String[] args) {
