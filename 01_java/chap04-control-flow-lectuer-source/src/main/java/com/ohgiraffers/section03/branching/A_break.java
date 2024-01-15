@@ -7,7 +7,7 @@ public class A_break {
     public void testSimpleBreakStatement() {
 
         /* 수업목표. break문 사용에 대한 흐름을 이해하고 적용할 수 있다. */
-        /* 필기. break문은 반복문 안에 사용하며 자신을 포함한 자장 가까운 반복문능 빠져나감(switch문의 break와 다름) */
+        /* 필기. break문은 반복문 안에 사용하며 자신을 포함한 가장 가까운 반복문을 빠져나감(switch문의 break와 다름) */
         int sum = 0;
         int i = 1;
         while(true) {           // 무한루프(infinite loop)

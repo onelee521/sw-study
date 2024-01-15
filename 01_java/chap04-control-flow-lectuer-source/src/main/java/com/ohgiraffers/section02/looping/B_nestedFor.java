@@ -82,22 +82,36 @@ public class B_nestedFor {
             printStar(i);
             System.out.println();
         }
+    }
+    public void printStars2() {
+        /* 설명.
+         *  아래와 같은 별모양이 나오도록 작성해보자
+         *  정수를 입력하시오: 5
+         *    *
+         *   ***
+         *  *****
+         *   ***
+         *    *
+         * */
 
-        /* 다이아몬드 찍기(짝수 모양은...) */
-        for (int i = 1; i <= input ; i += 2) {
-            System.out.print(" ".repeat((input-i)/2));
-            System.out.print("*".repeat(i));
-            System.out.print(" ".repeat((input-i)/2));
-            System.out.println();
-        }
-        for (int i = input-2; i >= 1 ; i -= 2) {
-            System.out.print(" ".repeat((input-i)/2));
-            System.out.print("*".repeat(i));
-            System.out.print(" ".repeat((input-i)/2));
-            System.out.println();
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.print("정수를 입력하시오: ");
+        int input = sc.nextInt();
 
+        for (int i = 1; i <= input;)
 
+//        for (int i = 1; i <= input; i += 2) {
+//            System.out.print(" ".repeat((input-i)/2));
+//            System.out.print("*".repeat(i));
+//            System.out.print(" ".repeat((input-i)/2));
+//            System.out.println();
+//        }
+//        for (int i = input-2; i >= 1 ; i -= 2) {
+//            System.out.print(" ".repeat((input-i)/2));
+//            System.out.print("*".repeat(i));
+//            System.out.print(" ".repeat((input-i)/2));
+//            System.out.println();
+//        }
     }
 
     private void printSpace(int input, int i) {
