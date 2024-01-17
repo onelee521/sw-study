@@ -22,7 +22,7 @@ public class OverloadingTest {
     public void test() {}
 
 //    private String test() {}                      // 메소드 오버로딩에서는 시그니처를 제외한 나머지 부분은 무관
-    
+
     public void test(int num) {}
 
     /* 설명. 매개변수의 갯수가 달라졌기 때문 */
