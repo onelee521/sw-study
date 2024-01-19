@@ -17,7 +17,7 @@ public interface InterProduct extends ParentInterProduct, AnotherParentProduct{
 //    private void nonStatsicMethod();              // 오류 발생
 //    public abstract void nonStaticMethod();
 //    public void nonStaticMethod();                //abstact 생략하면 자동으로 생성
-    void nonStaticMethod();                         //abstact public 생략하면 자동으로 생성
+    void nonStaticMethod();                         //public abstact 생략하면 자동으로 생성
 
     /* 설명. static 메소드는 바디부까지 작성을 허용하였다.(JDK 1.8부터 추가된 기능) */
     public static void ststicVoid() {

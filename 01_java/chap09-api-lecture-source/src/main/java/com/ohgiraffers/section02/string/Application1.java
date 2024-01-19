@@ -73,7 +73,7 @@ public class Application1 {
         System.out.println("caseStr: " + caseStr);
 
         /* 필기.
-         *  subString(): 문자열의 일부부을 잘라내어 새로운 문자열을 반환한다.
+         *  subString(): 문자열의 일부분을 잘라내어 새로운 문자열을 반환한다.
         * */
         String javamariaDB = "javamariaDB";
 
