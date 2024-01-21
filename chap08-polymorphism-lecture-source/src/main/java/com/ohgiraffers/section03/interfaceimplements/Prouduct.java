@@ -10,6 +10,6 @@ public class Prouduct implements InterProduct, Serializable{   // 인터페이�
 
     @Override
     public void defaultMethod() {           // 오버라이딩 시에는 default 예약어 제거할 것
-        System.out.println("Product 클래스에서 인터페이스로투버 물려받은 defaultMethod 호출됨...");
+        System.out.println("Product 클래스에서 인터페이스로부터 물려받은 defaultMethod 호출됨...");
     }
 }
