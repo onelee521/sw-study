@@ -10,7 +10,7 @@ public class Application1 {
 
         /* 수업목표. 컬렉션 프레임워크에 대해 이해할 수 있다. */
         ArrayList aList = new ArrayList();
-//    Arrays<Object> aList = new ArrayList<>();         // 다이아몬드 연산자 없는 제네릭 클래스는 <Object>와 같다.
+//    ArrayList<Object> aList = new ArrayList<>();         // 다이아몬드 연산자 없는 제네릭 클래스는 <Object>와 같다.
 
         List list = new ArrayList();                        // 컬렉션은 다형성을 적용한 형태로 많이 사용
 //    Collection col = new ArrayList();

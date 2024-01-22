@@ -11,7 +11,7 @@ public class Application1 {
         System.out.println("today = " + today);
 
         System.out.println("long 타입 시간: " + today.getTime());
-        System.out.println("long 타입 시간을 활용한 Date형: " + new Date(today.getTime()));
+        System.out.println("long 타입 시간을 활용한 Date형: " + new Date(today.getTime())); // long 타입 -> Date 타입
         System.out.println("기준시간(1970년 9시 0분 0초): " + new Date(0L));
 
         /* 설명. 우리가 원하는 형태로 출력해 보기(feat. SimpleDateFormat, long타입 활용하기) */
