@@ -26,15 +26,18 @@ public class Application {
         Lesson<Math> lesson6 = new Lesson<>();
         Lesson<English> lesson7 = new Lesson<>();
 
-        List secondSemester = new ArrayList<Lesson>();
+        List<Lesson> secondSemester = new ArrayList<Lesson>();      // 제네릭 필요
+        lesson5.setSubject(new English());
         secondSemester.add(lesson5);
         secondSemester.add(lesson6);
+        lesson5.getSubject().solved();
         System.out.println(secondSemester.get(0));      // com.ohgiraffers.mysection.genericcollection.Lesson@404b9385
-        lesson5.setSubject(new English());
         System.out.println(secondSemester.get(0));      // com.ohgiraffers.mysection.genericcollection.Lesson@404b9385
 
         lesson5.getSubject().solved();
-//        secondSemester.get(0).getSubject().solved(); // 컴파일에러
+//        ((Lesson<English>)secondSemester.get(0)).getSubject().solved(); // 제네릭을 안써서 반환형이 Object 다운캐스팅 필요
+        secondSemester.get(0).getSubject().solved();        // 제네릭 사용 후 해결
+
         System.out.println(secondSemester.get(0).getClass());   // class com.ohgiraffers.mysection.genericcollection.Lesson
 
         secondSemester.set(0, lesson7);
