@@ -1,8 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 public class Application1 {
@@ -18,7 +16,7 @@ public class Application1 {
         aList.add("apple");     // String -> Object 다형성 적용
         aList.add(123);         // 123 -> (Integer)123 -> Object
         aList.add(45.67);
-        aList.add(new java.util.Date());
+        aList.add(new Date());
 
         System.out.println("aList = " + aList);
         System.out.println("첫번째 저장된 값: " + aList.get(0));
@@ -84,5 +82,38 @@ public class Application1 {
         aList.remove(aList.indexOf("apple"));
         System.out.println(aList);
 
+        /* 설명. ArrayList를 활용해 정렬을 진행해보자. */
+        List<String> stringList =  new ArrayList<>();
+        stringList.add("apple");
+        stringList.add("orange");
+        stringList.add("banana");
+        stringList.add("mange");
+        stringList.add("grape");
+
+        System.out.println("stringList = " + stringList);
+
+        /* 설명. Collections의 sort() 메소드를 활용한 정렬 */
+        Collections.sort(stringList);
+        System.out.println("stringList = " + stringList);
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(4);
+        integerList.add(28);
+        integerList.add(5);
+        integerList.add(8);
+        integerList.add(14);
+
+        System.out.println("integerList = " + integerList);
+
+        Collections.sort(integerList);
+        System.out.println("integerList = " + integerList);
+
+        /* 설명. 내림차순으로 바꾸기 위해 ArrayList에서 LinkedList로 교체 */
+        stringList = new LinkedList<>(stringList);
+        Iterator<String> iter = ((LinkedList<String>)stringList).descendingIterator();      // descendingIterator()는 LIst가 아닌 Iterator 반환
+        while(iter.hasNext()){
+            System.out.println(iter.next());
+        }
+        System.out.println("stringList = " + stringList);
     }
 }
