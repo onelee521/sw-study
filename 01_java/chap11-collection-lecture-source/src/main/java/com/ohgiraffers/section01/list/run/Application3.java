@@ -55,7 +55,7 @@ public class Application3 {
         System.out.println(linkedList);             // null과 다름 존재는 하는데 요소가 없음
 
         /* 설명. 요소가 없는 list 객체에 대해 boolean값으로 확인 */
-        System.out.println(linkedList.isEmpty());
+        System.out.println(linkedList.isEmpty());       // 객체는 존재 요소가 없음
 //        System.out.println(linkedList == null);       // 조건문에 이와 같이 표현X
 
 
