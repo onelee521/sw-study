@@ -39,6 +39,5 @@ public class Application {
 
         secondSemester.set(0, lesson7);
         secondSemester.remove(1);
-
     }
 }
