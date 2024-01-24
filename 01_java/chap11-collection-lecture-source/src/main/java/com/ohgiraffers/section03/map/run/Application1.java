@@ -7,7 +7,6 @@ public class Application1 {
 
         /* 수업목표. Map의 자료구조에 대해 이해하고 HashMap을 이용할 수 있다. */
         Map<Object, Object> hmap = new HashMap<>();
-        Map<Object, Object> map = new Map<>();
 
         hmap.put("one", new Date());
         hmap.put(12, "red apple");
