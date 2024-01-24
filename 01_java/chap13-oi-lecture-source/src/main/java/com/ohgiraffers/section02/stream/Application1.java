@@ -10,7 +10,7 @@ import java.util.List;
 public class Application1 {
     public static void main(String[] args) {
 
-        /* 수업목표. 입출력 스트림에 대해 이해하고 파일을 대사으로 하는 FileInputStream을 사용할 수 있다. */
+        /* 수업목표. 입출력 스트림에 대해 이해하고 파일을 대상으로 하는 FileInputStream을 사용할 수 있다. */
         FileInputStream fin = null;
 
         try {
