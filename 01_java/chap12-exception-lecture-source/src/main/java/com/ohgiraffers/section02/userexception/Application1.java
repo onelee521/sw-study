@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.userexception;
 
+import com.ohgiraffers.section02.userexception.exception.MoneyNegativeException;
+import com.ohgiraffers.section02.userexception.exception.NotEnoughMoneyException;
 import com.ohgiraffers.section02.userexception.exception.PriceNegativeException;
 
 public class Application1 {
@@ -9,9 +11,22 @@ public class Application1 {
         ExceptionTest et = new ExceptionTest();
 
         try {
-            et.checkEnoughMoney(30000, 50000);
-        } catch (PriceNegativeException e) {
-            throw new RuntimeException(e);
+//            et.checkEnoughMoney(-30000, 50000);
+//            et.checkEnoughMoney(30000, -50000);
+            et.checkEnoughMoney(50000, 30000);
         }
+//        catch (PriceNegativeException e) {
+//            System.out.println(e.getMessage());
+//        } catch (NotEnoughMoneyException e) {
+//            System.out.println(e.getMessage());
+//        } catch (MoneyNegativeException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        catch (Exception e) {}     // 부모타입이 위로 올라가면x
+        catch (Exception e) {       // 다형성을 활용한 catch 처리 방식
+            System.out.println("예외 메세지: " + e.getMessage());
+        }
+
+
     }
 }
