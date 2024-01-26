@@ -18,14 +18,14 @@ public class Application2 {
 
         /* 설명. main Thread에서 스트림을 사용하고 확인 */
         System.out.println("==== normal stream ====");
-        stringList.forEach(Application2::print);
+//        stringList.forEach(Application2::print);
         stringList.forEach(s -> System.out.println(s + " : " + Thread.currentThread().getName()));
 
         /* 설명. 병렬 스트림 사용시 Thread 확인(속도가 상대적으로 몇 배 더 빠르다.) */
         System.out.println("==== prallel stream ====");
         stringList.parallelStream().forEach(Application2::print);
-        stringList.parallelStream().forEach(Application2::print);
-        stringList.parallelStream().forEach(Application2::print);
+//        stringList.parallelStream().forEach(Application2::print);
+//        stringList.parallelStream().forEach(Application2::print);
 
     }
 

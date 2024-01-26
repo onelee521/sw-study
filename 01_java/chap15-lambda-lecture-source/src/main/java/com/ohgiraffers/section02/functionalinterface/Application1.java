@@ -2,7 +2,6 @@ package com.ohgiraffers.section02.functionalinterface;
 
 import java.time.LocalTime;
 import java.util.Random;
-import java.util.SortedMap;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.ObjIntConsumer;

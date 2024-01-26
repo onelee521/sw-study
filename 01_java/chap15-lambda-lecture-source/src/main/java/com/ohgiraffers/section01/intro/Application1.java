@@ -19,8 +19,8 @@ public class Application1 {
         System.out.println("(10 + 20) * 2 = " + c2.sumTwoNumber(10, 20));
 
         /* 필기. 3. 람다식을 활용한 방식 */
-//        Calculator c3 =  (x, y) -> (x + y) * 3;
-        Calculator c3 = (x, y) -> {return (x + y) * 3;}; // 같은 의미, 중괄호를 지우면 return도 지우기
+        Calculator c3 =  (x, y) -> (x + y) * 3;
+//        Calculator c3 = (x, y) -> {return (x + y) * 3;}; // 같은 의미, 중괄호를 지우면 return도 지우기
         System.out.println("(10 + 20) * 3 = " + c3.sumTwoNumber(10, 20));
     }
 }

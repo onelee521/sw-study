@@ -133,7 +133,7 @@ public class MemberRepository {
         for (int i = 0; i < memberList.size(); i++) {
             if(memberList.get(i).getMemNo() == memNo){      // 지우려는 회원과 같은 회원 번호인 index 찾기
 
-                /* 설명. 프로그램 사엥서 회원을 관리하는 memberList 뿐 아니라 DB(회원 파일)도 같이 적용되게 함 */
+                /* 설명. 프로그램 사엥서 회원을 관리하는 memberList 뿐 아니라 DB(회원 파일)도 같이 적용되게 함   */
                 memberList.remove(i);
                 saveMembers(memberList);
                 return 1;
