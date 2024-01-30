@@ -7,6 +7,8 @@ package com.ohgiraffers.chap02.section01.sorting;
  *   시간 복잡도는 O(n^2) 이고 효율적이지는 않다.
 * */
 
+import java.util.Scanner;
+
 public class Application3 {
     /* 설명.
      *  문제 내용
@@ -31,13 +33,33 @@ public class Application3 {
      *  예시 출력 2
      *    - 5 14 17 19 26 38
      * */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    private static void solution(int length, int[] arr) {
-        for (int i = 0; i < length; i++) {
+        System.out.print("입력할 데이터 갯수를 입력하세요: ");
+        /* 설명. 입력 데이터 받기 */
+        int length = sc.nextInt();
+        int[] arr = new int[length];
+        System.out.print("데이터를 입력하세요: ");
+        for (int i = 0;  i < arr.length; i++) {
+            arr[i] = sc.nextInt();              // 공백을 구분자로 하여 하나씩 입력 됨
+        }
+
+        /* 설명. 알고리즘 실행 */
+        solution(length, arr);
+
+        /* 설명. 정렬 결과 출력하기 */
+        for (int i: arr) {
+            System.out.print(i + " ");
+        }
+    }
+    public static void solution(int length, int[] arr) {
+        for (int i = 1; i < length; i++) {
             int temp = arr[i];
             int j;
-            for (j = 0; j >= 0 ; j--) {
-                if (arr[j] > temp) arr[j + 1] = arr[i];
+            for (j = i - 1; j >= 0 ; j--) {
+                if (arr[j] > temp) arr[j + 1] = arr[j];
+                else break;
             }
             arr[j + 1] = temp;
 
