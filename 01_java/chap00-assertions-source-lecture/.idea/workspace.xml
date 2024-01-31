@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b96c70f1-e92a-4225-8b08-965d5844e2f7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="chap00-assertions-source-lecture" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="chap00-assertions-source-lecture" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2bbvjVZQ3UP0OQWtZGL0kFEJY8w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JupiterAssertionsTests.testAssertEquals.executor": "Run",
+    "Gradle.chap00-assertions-source-lecture [dependencies].executor": "Run",
+    "JUnit.AssertJTests.testExceptionValidation.executor": "Run",
+    "JUnit.AssertJTests.testFilteringAssertions.executor": "Run",
+    "JUnit.AssertJTests.testIntegerValidation.executor": "Run",
+    "JUnit.AssertJTests.testLocalDateTimeValidation.executor": "Run",
+    "JUnit.AssertJTests.testPropertyValidation.executor": "Run",
+    "JUnit.JupiterAssertionsTests.executor": "Run",
+    "JUnit.JupiterAssertionsTests.testAssertAll.executor": "Run",
+    "JUnit.JupiterAssertionsTests.testAssertEquals.executor": "Run",
+    "JUnit.JupiterAssertionsTests.testAssertNotEqualsWithInstanses.executor": "Run",
+    "JUnit.JupiterAssertionsTests.testAssertThrows.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/lecture-git/01_java/chap00-assertions-source-lecture/src/main/java/com/ohgiraffers/assertions/section02/assertj",
+    "last_opened_file_path": "C:/lecture-git/01_java/chap00-assertions-lecture-source",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ohgiraffers.assertions.section02.assertj" />
+      <recent name="com.ohgiraffers.assertions.section01.jupiter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AssertJTests.testPropertyValidation">
+    <configuration name="AssertJTests.testExceptionValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap00-assertions-source-lecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.assertions.section02.assertj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.assertions.section02.assertj" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.assertions.section02.assertj.AssertJTests" />
+      <option name="METHOD_NAME" value="testExceptionValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertJTests.testFilteringAssertions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap00-assertions-source-lecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.assertions.section02.assertj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.assertions.section02.assertj" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.assertions.section02.assertj.AssertJTests" />
+      <option name="METHOD_NAME" value="testFilteringAssertions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertJTests.testIntegerValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap00-assertions-source-lecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.assertions.section02.assertj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.assertions.section02.assertj" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.assertions.section02.assertj.AssertJTests" />
+      <option name="METHOD_NAME" value="testIntegerValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertJTests.testLocalDateTimeValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap00-assertions-source-lecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.assertions.section02.assertj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.assertions.section02.assertj" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.assertions.section02.assertj.AssertJTests" />
+      <option name="METHOD_NAME" value="testLocalDateTimeValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssertJTests.testPropertyValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap00-assertions-source-lecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.assertions.section02.assertj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.assertions.section02.assertj" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.assertions.section02.assertj.AssertJTests" />
+      <option name="METHOD_NAME" value="testPropertyValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AssertJTests.testPropertyValidation" />
+        <item itemvalue="JUnit.AssertJTests.testFilteringAssertions" />
+        <item itemvalue="JUnit.AssertJTests.testExceptionValidation" />
+        <item itemvalue="JUnit.AssertJTests.testLocalDateTimeValidation" />
+        <item itemvalue="JUnit.AssertJTests.testIntegerValidation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b96c70f1-e92a-4225-8b08-965d5844e2f7" name="Changes" comment="" />
+      <created>1706496731552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706496731552</updated>
+      <workItem from="1706496732602" duration="3943000" />
+      <workItem from="1706573431954" duration="5735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ohgiraffers/assertions/section01/jupiter/JupiterAssertionsTests.java</url>
+          <line>13</line>
+          <properties class="com.ohgiraffers.assertions.section01.jupiter.JupiterAssertionsTests" method="testAssertEquals">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

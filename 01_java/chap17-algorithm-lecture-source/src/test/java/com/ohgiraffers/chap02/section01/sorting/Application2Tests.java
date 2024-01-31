@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
-public class Appplication3Tests {
+public class Application2Tests {
 
     private static int input1, input2;
     private static int[] act1, act2;
@@ -43,7 +43,7 @@ public class Appplication3Tests {
     @ParameterizedTest
     @MethodSource("provideDsendingSource")
     public void selectionSortTests(int length, int[] actual, int[] expected) {
-        Application3.solution(length, actual);
+        Application2.solution(length, actual);
         Assertions.assertArrayEquals(expected, actual);
     }
 }
