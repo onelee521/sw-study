@@ -13,6 +13,11 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
+/* 수업목표. 그리디(Greedy) 알고리즘에 대해 이해할 수 있다. */
+/* 필기.
+ *  현재 상태에서 최적의 해답(최대 이익을 주는 해답)을 찾기 위해 적용하는 알고리즘으로
+ *  앞의 선택이 이후에 영향을 주지 않을 때 사용
+* */
 public class Application1Tests {
     private static Integer input1, input2, input3;
     private static Integer output1,output2, output3;
