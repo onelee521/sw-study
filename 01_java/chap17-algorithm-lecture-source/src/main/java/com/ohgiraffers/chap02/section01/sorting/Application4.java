@@ -48,6 +48,7 @@ public class Application4 {
         int lo = left - 1;
         int hi = right + 1;
         int pivot = arr[(left + right) / 2];
+        System.out.println("pivot = " + pivot);
         while (true){
 
             /* 설명. pivot 위치에 있는 값보다 작은 값을 가리키면 lo 포인터를 증가한다. */
