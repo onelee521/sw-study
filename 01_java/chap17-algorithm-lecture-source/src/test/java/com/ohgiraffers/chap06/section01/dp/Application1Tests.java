@@ -13,6 +13,11 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
+/* 수업목표. 동적계획법(Dynamic Programming) 알고리즘을 활용하는 예제를 이용할 수 있다. */
+/* 필기.
+ *  복잡한 전체 문제를 작은 부분 문제에 대한 최적의 해결방법을 고안하여 해결하는 알고리즘
+ *  규칙이 보이는 구간들에 대한 점화식을 세워 작은 문제들을 해결하면 전체 문제의 최적의 값이 나오게 된다.
+* */
 public class Application1Tests {
     private static Integer input1, input2, input3;
     private static Integer output1,output2, output3;
