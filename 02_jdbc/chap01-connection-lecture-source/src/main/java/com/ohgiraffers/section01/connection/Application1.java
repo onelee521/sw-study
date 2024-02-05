@@ -10,7 +10,6 @@ public class Application1 {
         Connection con = null;
 
         try {
-            // mariadb로 써야하지 않나?
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306", "swcamp", "swcamp");
 
