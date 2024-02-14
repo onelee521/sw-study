@@ -12,7 +12,7 @@ public class BookService {
 
     /* 설명.
      *  아래의 3가지는 ComponentScan 범위 안에 어노테이션들이 달렸을 때 유효하다.
-     *  1. @Service에 의해서 BookService 타입의 bookServixe bean이 관리된다.
+     *  1. @Service에 의해서 BookService 타입의 bookService bean이 관리된다.
      *  2. BookDAOImpl에 있는 @Repository에 의해서 bookDAOImpl bean이 관리 된다.(BookDTO 타입이기도 하다.)
      *  3. @Autowired에 의해서 BookDTO 타입의 반이 BookService의 필드인 bookDAO 필드에 주입된다.(대입된다,)
     * */
