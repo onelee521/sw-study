@@ -7,7 +7,7 @@ public class Application {
 
         /* 필기.
          *  리플렉션(reflection)이란?
-         *   첨파일된 자바 코드에서 역으로 클래스를 불러 메소드 및 필드 정보를 구해오는 방법이다.
+         *   컴파일된 자바 코드에서 역으로 클래스를 불러 메소드 및 필드 정보를 구해오는 방법이다.
          *   스프링 프레임워크, 마이바티스, 하이버네이트, jackson 등의 라이브러리에서 사용된다.
          *   스프링에서는 런타임 시 개발자가 등록한 빈을 애플리케이션 내에서 사용할 수 있게 하는 기술이기도 하다.
          *
@@ -57,9 +57,9 @@ public class Application {
         for (Constructor constructor : constructors) {
             System.out.println("name: " + constructor.getName());
 
-            Class[] paprms = constructor.getParameterTypes();
-            for (Class paprm : paprms) {
-                System.out.println("paramType: " + paprm.getTypeName());
+            Class[] params = constructor.getParameterTypes();
+            for (Class param : params) {
+                System.out.println("paramType: " + param.getTypeName());
             }
         }
 
@@ -82,7 +82,7 @@ public class Application {
                           + method.getReturnType().getSimpleName()  + " "
                           + method.getName());
 
-            if("getBalence".equals(method.getName())) {
+            if("getBalance".equals(method.getName())) {
                 getBalanceMethod = method;
             }
         }
