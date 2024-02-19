@@ -24,12 +24,14 @@ public class StopwatchInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
+
         /* 설명. 핸들러 인터셉터는 bean을 활용할 수 있다,(@Service 계층의 객체도 bean이다.) */
         //        MENUSERVICE.method(); // 빈 활용
         System.out.println("preHandler 호출함...(헨들러 메소드 이전)");
 
         long startTime = System.currentTimeMillis();
         request.setAttribute("startTime", startTime);
+        System.out.println("startTime = " + startTime);
 
         /* 설명. 반환형을 false로 하면 특정 조건에 의해 이후 핸들러 메소드가 실행되지 않게 할 수도 있다. */
 //        return false;
@@ -43,7 +45,10 @@ public class StopwatchInterceptor implements HandlerInterceptor {
         long startTime = (long)request.getAttribute("startTime");
         long endTime = System.currentTimeMillis();
 
+        System.out.println("startTime = " + startTime);
+        System.out.println("endTime = " + endTime);
         request.removeAttribute("startTime");
+        System.out.println("startTime = " + startTime);
 
         modelAndView.addObject("interval", endTime - startTime);
 
