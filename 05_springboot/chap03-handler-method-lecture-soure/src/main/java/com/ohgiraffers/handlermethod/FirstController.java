@@ -1,9 +1,7 @@
 package com.ohgiraffers.handlermethod;
 
-import com.fasterxml.jackson.databind.jdk14.JDK14Util;
-import jakarta.servlet.http.HttpServletRequest;
+
 import jakarta.servlet.http.HttpSession;
-import org.apache.coyote.http11.filters.SavedRequestInputFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +16,7 @@ import java.util.Map;
 @RequestMapping("/first")
 
 /* 설명. 이 Controller 클래스의 핸들러 메소드에서 Model에 'id'라는 키 값으로 담는 값들은 Session에 담으라는 어노테이션 */
-@SessionAttributes("id")
+//@SessionAttributes("id")
 public class FirstController {
 
     /* 설명. 반환형이 void인 핸들러 메소드는 요청 경로 자체가 view의 경로 및 이름을 반환한 것으로 바로 해석이 된다. */
@@ -92,7 +90,7 @@ public class FirstController {
         return "first/messagePrinter";
     }
 
-    @GetMapping("search")
+    @GetMapping("search")   // 요청된 페이지와 반환되는 페이지가 같으면 void 다르면 String
     public void searchMenu(){
 
     }
@@ -111,28 +109,28 @@ public class FirstController {
     @GetMapping("login")
     public void login() {}
 
-    @PostMapping("login")
-    public String sessionTest1(HttpSession session, @RequestParam String id) {
-        session.setAttribute("id", id);
+    @PostMapping("login")   // password를 숨기기 위해 post 사용
+    public String sessionTest1(HttpSession session, @RequestParam String id) {// name과 다르면 속성 추가 필요
+        session.setAttribute("id1", id);
         return "first/loginResult";
     }
 
-    @GetMapping("logout1")
+    @GetMapping("logout1")      // 사용자의 세션 무효화
     public String logoutTest1(HttpSession session) {
         session.invalidate();
 
         return "first/loginResult";
     }
 
-    @PostMapping("login2")
+    @PostMapping("login2")  // 모델을 사용해서 세션 무효화 사용x
     public String sessionTest2(Model model, @RequestParam String id) {
         model.addAttribute("id", id);
 
         return "first/loginResult";
     }
 
-    /* 설명. @SessionAttribute 방식으로 Session에 담긴 값은 SessionStatus에서 제공하는 setComplate()로 만료시켜야 한다. */
-    @GetMapping("logout2")
+    /* 설명. @SessionAttribute 방식으로 Session에 담긴 값은 SessionStatus에서 제공하는 setComplete()로 만료시켜야 한다. */
+    @GetMapping("logout2")  // 트랜잭션 종료 후 커밋
     public String logoutTest2(SessionStatus sessionStatus) {
         sessionStatus.setComplete();
 
