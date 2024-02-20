@@ -36,6 +36,7 @@ public class Application {
                     menuController.modifyMenu(inputModifyMenu());
                     break;
                 case 5:
+                    menuController.removeMenu(inputMenuCode());
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");
