@@ -49,7 +49,7 @@ public class MenuController {
         menu.setCategoryCode(categoryCode);
 
         if (menuService.registMenu(menu)) {
-            printResult.printSuccessMessage("request");
+            printResult.printSuccessMessage("regist");
         } else {
             printResult.printErrorMessage("메뉴 추가 실패");
         }
