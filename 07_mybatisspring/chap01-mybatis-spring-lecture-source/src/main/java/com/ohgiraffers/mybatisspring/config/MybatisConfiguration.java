@@ -32,7 +32,7 @@ public class MybatisConfiguration {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
 
-        /* 설명. 데이터베이스에 연결으 시도할 때 타임아웃 값을 설정(연결시도 가능 설정) */
+        /* 설명. 데이터베이스에 연결을 시도할 때 타임아웃 값을 설정(연결시도 가능 설정) */
         dataSource.setConnectionTimeout(30000); //30초
 
         /* 설명. 데이터베이스의 연결이 유휴상태로 유지될 수 있는 최대시간 설정(쿼리를 보내거나 데이터를 업데이트 하지 않은 시간 설정) */
