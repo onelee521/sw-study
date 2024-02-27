@@ -11,6 +11,7 @@ public class Member {
     @Id
     @Column(name="member_no")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.AUTO)       // IDENTITY가 안되면 사용
     private int memberNo;
 
     @Column(name="member_id")
