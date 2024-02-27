@@ -13,7 +13,7 @@ public class A_EntityManagerLifeCycleTests {
      *   thread-safe하기 때문에 여러 스레드가 동시에 접근해도 안전하므로 서로 다른 스레드 간 공유해서 재사용
      *   thread-safe한 기능을 요청 스코프마다 생성하기에는 비용(시간, 메모리) 부담이 크므로
      *   application 스코프와 동일하게 싱글톤으로 생성해서 관리하는 것이 효율적
-     *   따라서 디비를 사용하는 애플리케이션 당 한 개의 EntityManagerFactory를 생성
+     *   따라서 데이터베이스를 사용하는 애플리케이션 당 한 개의 EntityManagerFactory를 생성
      *
      * 필기.
      *  엔티티 매니저(Entity Manager)란?
@@ -27,7 +27,7 @@ public class A_EntityManagerLifeCycleTests {
      *   엔티티 매니저를 통해 엔티티를 저장하거나 조회하면 엔티티 매니저는 영속성 컨텍스트에 엔티티를 보관하고 관리
      *   영속성 컨텍스트는 엔티티를 key-value 방식으로 저장하는 저장소
      *   영속성 컨텍스트는 엔티티 매니저를 생성할 대 같이 하나 만들어진다.
-     *   그리고 엔티티 먀니저를 통해서 영속성 컨텍스트에 접근할 수 있고 관리할 수 있다.
+     *   그리고 엔티티 매니저를 통해서 영속성 컨텍스트에 접근할 수 있고 관리할 수 있다.
     * */
 
     private static EntityManagerFactory entityManagerFactory;

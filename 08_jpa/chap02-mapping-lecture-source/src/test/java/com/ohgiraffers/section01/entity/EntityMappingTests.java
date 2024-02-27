@@ -56,8 +56,6 @@ public class EntityMappingTests {
 
         entityManager.persist(member);
 
-        entityTransaction.commit();
-
         //then
         Member foundMember = entityManager.find(Member.class, 1);
         foundMember.setNickname("동해");
