@@ -15,3 +15,9 @@ GET localhost:8080/response/list
 
 #### GET request mapping
 GET localhost:8080/response/map
+
+#### GET request image
+GET localhost:8080/response/image
+
+#### GET request entity
+GET localhost:8080/response/entity
