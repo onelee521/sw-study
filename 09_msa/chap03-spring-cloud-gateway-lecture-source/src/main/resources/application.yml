@@ -8,36 +8,49 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+#spring:
+#  application:
+#    name: gateway-server
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: 1st-service
+##          uri: http://localhost:63511/
+#
+#          # ?????(???????? ???? ???? ???)?? ??, ???? ??(uri)
+#          uri: lb://MY-1ST-SERVICE
+#
+#          # ??? ?????? ?? ??? '/first-service/**? ????~'?? ??
+#          predicates:
+#          - Path=/first-service/**
+#
+#          # Global, Custom ?? ??? ???? ??
+#          #(request ? response header? ? ??, segment? ??? ?? ??)
+#          filters:
+#            - AddRequestHeader=first-request, first-request-header
+#            - AddResponseHeader=first-response, first-request-header
+#
+#            # ????? ?? segement? ???
+#            - RewritePath=/first-service/(?<segment>.*), /$\{segment}
+#        - id: 2nd-service
+##          uri: http://localhost:63514/
+#          uri: lb://MY-2ND-SERVICE
+#          predicates:
+#            - Path=/second-service/**
+#          filters:
+#            - AddRequestHeader=second-request, second-request-header
+#            - AddResponseHeader=second-response, second-request-header
+#            - RewritePath=/second-service/(?<segment>.*), /$\{segment}
 spring:
   application:
     name: gateway-server
   cloud:
     gateway:
       routes:
-        - id: 1st-service
-#          uri: http://localhost:63511/
-
-          # ?????(???????? ???? ???? ???)?? ??, ???? ??(uri)
-          uri: lb://MY-1ST-SERVICE
-
-          # ??? ?????? ?? ??? '/first-service/**? ????~'?? ??
+        - id: user-service
+          uri: lb://SWCAMP-USER-SERVICE
           predicates:
-          - Path=/first-service/**
-
-          # Global, Custom ?? ??? ???? ??
-          #(request ? response header? ? ??, segment? ??? ?? ??)
+            - Path=/user-service/**
           filters:
-            - AddRequestHeader=first-request, first-request-header
-            - AddResponseHeader=first-response, first-request-header
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
 
-            # ????? ?? segement? ???
-            - RewritePath=/first-service/(?<segment>.*), /$\{segment}
-        - id: 2nd-service
-#          uri: http://localhost:63514/
-          uri: lb://MY-2ND-SERVICE
-          predicates:
-            - Path=/second-service/**
-          filters:
-            - AddRequestHeader=second-request, second-request-header
-            - AddResponseHeader=second-response, second-request-header
-            - RewritePath=/second-service/(?<segment>.*), /$\{segment}
