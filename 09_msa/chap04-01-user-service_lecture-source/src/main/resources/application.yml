@@ -33,3 +33,11 @@ eureka:
 swcamp:
   message: Let's do msa!
 
+token:
+
+  # JWT ??? ???? ??(ms ??)(12???? ??)
+  expiration_time: 43200000
+
+  # JWT ??? Verify Signature? ?? secret-key
+  secret: l1Z5I9WufSD5qM0UTHXDJa1kaGxBlyhKMbx+ONkqzeRTlKdF8Bq37mA3Z8nhjRlwVUrL/u3bdkFeamIrUoWvVw==
+
