@@ -1,6 +1,7 @@
 package com.ohgiraffers.userservice.controller;
 
 import com.ohgiraffers.userservice.dto.UserDTO;
+import com.ohgiraffers.userservice.service.UserService;
 import com.ohgiraffers.userservice.vo.HelloVO;
 import com.ohgiraffers.userservice.vo.RequestUser;
 import com.ohgiraffers.userservice.vo.ResponseUser;
@@ -20,12 +21,18 @@ public class UserController {
 
     private ModelMapper modelMapper;
 
+    private UserService userService;        // 서비스의 타입만 보고있음(타입은닉)
+
 
     @Autowired
-    public UserController(Environment env, HelloVO helloVo, ModelMapper modelMapper) {
+    public UserController(Environment env,
+                          HelloVO helloVo,
+                          ModelMapper modelMapper,
+                          UserService userService) {
         this.env = env;
         this.helloVo = helloVo;
         this.modelMapper = modelMapper;
+        this.userService = userService;
     }
 
     /* 설명.
@@ -51,11 +58,16 @@ public class UserController {
     @PostMapping("/users")
     // ResponseUser: 화면에 뿌려줄 데이터가 있음
     public ResponseEntity<ResponseUser> registUser(@RequestBody RequestUser user) {
-        UserDTO userDTO = modelMapper.map(user, UserDTO.class);
-        System.out.println("userDTO = " + userDTO);
 
-        ResponseUser responseUser = new ResponseUser();
-        responseUser.setName("응답확인");
+        /* 설명. RequestUser -> UserDTO */
+        UserDTO userDTO = modelMapper.map(user, UserDTO.class);
+
+        /* 설명. 회원가입 비즈니스 로직 시작 */
+        userService.registUser(userDTO);
+
+        /* 설명. UserDTO -> ResponseUser */
+        ResponseUser responseUser = modelMapper.map(userDTO, ResponseUser.class);
+
         return ResponseEntity.status(HttpStatus.CREATED).body(responseUser);
     }
 }
