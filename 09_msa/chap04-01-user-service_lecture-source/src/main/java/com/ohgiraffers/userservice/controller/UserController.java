@@ -64,9 +64,11 @@ public class UserController {
 
         /* 설명. 회원가입 비즈니스 로직 시작 */
         userService.registUser(userDTO);
+        System.out.println("userDTO = " + userDTO);
 
         /* 설명. UserDTO -> ResponseUser */
         ResponseUser responseUser = modelMapper.map(userDTO, ResponseUser.class);
+        System.out.println("responseUser = " + responseUser);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(responseUser);
     }
