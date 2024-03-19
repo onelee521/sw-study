@@ -19,6 +19,7 @@ console.log('-------------------');
 /* .: 임의의 문자열 */
 target = 'abcdefg';
 console.log(target.match(/../g));
+console.log(!!target.match(/../g)); // true
 
 let arr = target.match(/../g);
 console.log(arr[1]);

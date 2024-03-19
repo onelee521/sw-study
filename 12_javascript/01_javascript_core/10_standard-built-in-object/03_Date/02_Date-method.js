@@ -9,7 +9,7 @@ const date = new Date();
 
 console.log(Object.getOwnPropertyDescriptors(date));
 console.log(date.getFullYear());
-console.log(date.getMonth() + 1);
+console.log(date.getMonth() + 1);           // month는 +1을 해야 1~12월 체계의 값이 나온다
 console.log(date.getDate());
 console.log(date.getDay());                 // 일요일부터 0~6까지로 반환
 console.log(date.getHours());

@@ -19,5 +19,5 @@ console.log(`두 배열 중에 가장 큰 값: ${Math.max(...arr1, ...arr2)}`);
 /* 문자열일 때 */
 let str = "JavaScript";
 console.log(...str);
-console.log([...str]);
-console.log(Array.from(str));
+console.log([...str]);          // 스프레드 연산자로 문자 하나씩 들어간 배열을 쉽게 만들 수 있다.
+console.log(Array.from(str));   // 무언가를 배열로 바꿀 때 보편적으로 사용하는 배열의 from 메소드

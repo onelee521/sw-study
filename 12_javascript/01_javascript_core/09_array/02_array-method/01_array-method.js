@@ -60,5 +60,5 @@ console.log(`front: ${front}`);                                             // H
 
 /* join: 배열을 우리가 원하는 구분자와 함께 결합하여 문자열로 반환 */
 const snackList = ['사탕', '초콜렛', '껌', '마이쮸'];
-console.log(`snackList.join(): ${snackList.join()}`); 
-console.log(`snackList.join('/'): ${snackList.join('/')}`); 
+console.log(`snackList.join(): ${snackList.join()}`);           // 사탕,초콜렛,껌,마이쮸
+console.log(`snackList.join('/'): ${snackList.join('/')}`);     // 사탕/초콜렛/껌/마이쮸

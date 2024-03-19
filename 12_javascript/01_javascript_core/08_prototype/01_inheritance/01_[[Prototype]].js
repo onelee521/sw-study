@@ -26,6 +26,15 @@ const student = {
 
 console.log(student.__proto__);
 
-student.__proto__ = user2;
+student.__proto__ = user2;      // 부모 객체를 자신의 [[Prototype]]에 담으면 상속의 개념이 된다.
 
 student.login();
+
+// 프로토타입 체인
+const greedyStudent = {
+    class: 1502,
+    __proto__: student
+}
+
+console.log(greedyStudent.activate);    // user2에서 상속
+console.log(greedyStudent.passion);     // student에서 상속

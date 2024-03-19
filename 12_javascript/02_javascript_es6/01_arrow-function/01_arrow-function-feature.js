@@ -44,6 +44,13 @@ let test = function () {
 
 test(1, 2, 3, 4, 5);
 
+/* 
+    화살표 함수는 다른 함수의 인수로 전달되어 콜백 함수로 사용되는 경우가 많다.
+    위와 같은 특징들은 콜백 함수 내부의 this가 외부 함수의 this와 다르기 때문에 발생하는 문제를 해결하기 위해
+    의도적으로 설계된 것이라 할 수 있다.(arguments도 마찬가지)
+    따라서 화살표 함수를 사용할 때는 어느정도 개념을 정확히 인지하고 써야한다.
+*/
+
 const arrowFunc2 = () => console.log(arguments);
 let test2 = function () {
     // console.log(arguments);
