@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var test1 = 1;
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        test(test1); 
+
+        test(); // 이렇게도 가능하지만 가독성이 좋지않고 나중에 스크립트를 따로 파일로 뺄 때 에러가 생겨서 고치기 번거로워짐
+
+        function test() {
+            console.log('test!!');
+        }
+    </script>
+</body>
+</html>
