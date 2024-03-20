@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* promise를 더 쉽게 사용할 수 있게 async/await가 ES8(2017)에서 추가되었다. */
+
+        function increase(number) {
+            const promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    const result = number + 10;
+
+                    if (result > 50) {
+                        const e = new Error('NumberTooBig');
+
+                        return reject(e);
+                    }
+
+                    return resolve(result);
+                }, 1000);
+            })
+
+            return promise;
+        }
+
+        async function run(num) {
+            console.log(num);
+
+            for(let i = 0; i < 1000000000; i++) {}
+
+            let test = num++;
+
+            let result = await increase(0);
+            console.log(result); 
+
+            result = await increase(result);
+            console.log(result);
+
+            result = await increase(result);
+            console.log(result);
+
+            result = await increase(result);
+            console.log(result);
+
+            result = await increase(result);
+            console.log(result);
+
+            console.log('end');
+
+            return test;
+        }
+
+        run(1);
+        run(2);
+        run(3);
+        
+
+
+    </script>
+</body>
+</html>
