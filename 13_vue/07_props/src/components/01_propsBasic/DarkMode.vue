@@ -1,3 +1,7 @@
+
+<!-- 
+    자식 컴포넌트가 부모 컴포넌트로 발산(emit(해당 이벤트 이름))
+-->
 <template>
     <button @click="emit('toggle')">다크 모드</button>
 </template>
