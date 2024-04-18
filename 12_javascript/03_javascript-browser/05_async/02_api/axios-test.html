@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>API Response</title>
+</head>
+<body>
+    <table id="userData">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <!-- Add more headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User data will be inserted here -->
+        </tbody>
+    </table>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function callAPI() {
+                axios.get('https://jsonplaceholder.typicode.com/users')
+                    .then(res => {
+                        displayData(res.data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
+            }
+
+            function displayData(data) {
+                const tableBody = document.querySelector('#userData tbody');
+                data.forEach(user => {
+                    const row = tableBody.insertRow();
+                    const nameCell = row.insertCell(0);
+                    const emailCell = row.insertCell(1);
+                    const phoneCell = row.insertCell(2);
+
+                    nameCell.textContent = user.name;
+                    emailCell.textContent = user.email;
+                    phoneCell.textContent = user.phone;
+                    // Add more cells with user data as needed
+                });
+            }
+
+            callAPI();
+        });
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     function callAPI() {
+        //         axios.get('https://jsonplaceholder.typicode.com/users')
+        //             .then(res => {
+        //                 displayData(res.data);
+        //             })
+        //             .catch(error => {
+        //                 console.error('Error fetching data:', error);
+        //             });
+        //     }
+
+        //     function displayData(data) {
+        //         const tableBody = document.querySelector('#userData tbody');
+        //         data.forEach(user => {
+        //             const row = tableBody.insertRow();
+        //             addCell(row, user.name);
+        //             addCell(row, user.email);
+        //             addCell(row, user.phone);
+        //             // Add more cells with user data as needed
+        //         });
+        //     }
+
+        //     function addCell(row, text) {
+        //         const cell = row.insertCell();
+        //         cell.textContent = text;
+        //     }
+
+        //     callAPI();
+        // });
+    </script>
+</body>
+</html>

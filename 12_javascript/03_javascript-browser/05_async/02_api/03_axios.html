@@ -7,13 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         function callAPI() {
             axios.get('https://jsonplaceholder.typicode.com/users')
                 .then(res => console.log(res.data));
         }
 
         callAPI();
+    </script> -->
+    <div id="apiData"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function callAPI() {
+                axios.get('https://jsonplaceholder.typicode.com/users')
+                    .then(res => {
+                        displayData(res.data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
+            }
+
+            function displayData(data) {
+                const apiDataDiv = document.getElementById('apiData');
+                data.forEach(user => {
+                    const userDiv = document.createElement('div');
+                    userDiv.textContent = `Name: ${user.name}, Email: ${user.email}`;
+                    apiDataDiv.appendChild(userDiv);
+                });
+            }
+
+            callAPI();
+        });
     </script>
 </body>
 </html>
