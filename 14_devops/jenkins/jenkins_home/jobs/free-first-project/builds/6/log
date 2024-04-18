@@ -1,0 +1,26 @@
+Started by user [8mha:////4CvND5paBwdeMUnEjaf+ugzXDrHz3rXePqmDNpxxkCWCAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0moneye
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/free-first-project
+The recommended git tool is: NONE
+using credential ssh-jenkins-github--key
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/free-first-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/onelee521/jenkeins-boot.git # timeout=10
+Fetching upstream changes from https://github.com/onelee521/jenkeins-boot.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using manually-configured host key entries
+ > git fetch --tags --force --progress -- https://github.com/onelee521/jenkeins-boot.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 25bbb5b8e49b0b5c909063f9a1c48c6453251670 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 25bbb5b8e49b0b5c909063f9a1c48c6453251670 # timeout=10
+Commit message: "piple라인 추가용 푸시"
+ > git rev-list --no-walk 25bbb5b8e49b0b5c909063f9a1c48c6453251670 # timeout=10
+[free-first-project] $ /bin/sh -xe /tmp/jenkins7446850809917380465.sh
++ chmod +x ./gradlew
++ .gradlew clean build
+/tmp/jenkins7446850809917380465.sh: 3: .gradlew: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

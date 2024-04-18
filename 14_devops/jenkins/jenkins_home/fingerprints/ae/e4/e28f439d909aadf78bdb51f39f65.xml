@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-04-12 01:15:46.638 UTC</timestamp>
+  <md5sum>aee4e28f439d909aadf78bdb51f39f65</md5sum>
+  <fileName>Credential id=DOCKERHUB_PASSWORD name=oneye521/******</fileName>
+  <usages>
+    <entry>
+      <string>first-pipeline</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
